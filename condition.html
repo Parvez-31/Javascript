@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>condition</title>
+  </head>
+  <body>
+    <h1>CONDITION</h1>
+
+    <script>
+      // let theNumber = Number(prompt("Pick a number"))
+      // if(!Number.isNaN(theNumber)) {
+      //     console.log(`Your number is the square root of ${theNumber * theNumber}`)
+      // }else {
+      //     console.log("Hey, why you did't give me a number")
+      // }
+
+      // let num = Number(prompt("Pick a number"));
+
+      // if(num < 10){
+      //     console.log("Small")
+      // } else if (num < 100) {
+      //     console.log("Medium")
+      // } else {
+      //     console.log("Large")
+      // }
+
+      let num = Number(prompt("Pick a number"));
+      switch (true) {
+        case num < 10:
+          console.log("Small");
+          break;
+
+        case num < 100:
+          console.log("Medium");
+          break;
+
+        default:
+          console.log("Large");
+          break;
+      }
+    </script>
+  </body>
+</html>
