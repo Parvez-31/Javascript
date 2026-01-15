@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leap-Year</title>
+  </head>
+  <body>
+    <h1>Check Leap Year</h1>
+
+    <form id="leapYearForm">
+      <label for="year">Enter Year:</label>
+      <input type="number" name="year" id="year" />
+      <br /><br />
+
+      <label for="month">Enter Month:</label>
+      <input type="number" name="month" id="month" max="12" min="1" />
+      <br /><br />
+
+      <label for="date">Enter Date:</label>
+      <input type="number" name="date" id="date" max="31" min="1" />
+      <br /><br />
+
+      <button type="submit" id="submit">submit</button>
+      <button id="reset">reset</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+      const leapYearFormEl = document.getElementById("leapYearForm");
+      const resultEl = document.getElementById("result");
+
+      leapYearFormEl.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const yearEl = Number(document.getElementById("year").value);
+        const monthEl = Number(document.getElementById("month").value);
+        const dateEl = Number(document.getElementById("date").value);
+        // console.log("first");
+        // Valibation
+        if (!yearEl || !monthEl || !dateEl) {
+          resultEl.textContent = "Please fill all fields.";
+          return;
+        }
+
+        // Year check
+        function isLeapYear(year) {
+          return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+        }
+
+        let leapYear = isLeapYear(yearEl);
+        let result = leapYear
+          ? `${yearEl} is a leap year.`
+          : `${yearEl} is not a leap year.`;
+
+        // Month check
+        if (monthEl === 2 && dateEl === 29 && !leapYear) {
+          result = `${yearEl} is not a leap year, so feb 29th is not valid.`;
+        }
+
+        resultEl.textContent = result;
+      });
+    </script>
+  </body>
+</html>
