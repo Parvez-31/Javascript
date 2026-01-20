@@ -102,17 +102,3 @@ let check = fillArray.filter((val) => {
 
 console.log(fillArray);
 console.log(check);
-
-function longestWord(str) {
-  let words = str.split(" ");
-  let longword = "";
-
-  for (let word of words) {
-    if (word.length > longword.length) {
-      longword = word;
-    }
-  }
-  return longword;
-}
-
-console.log(longestWord("I love cupcakes very much"));
