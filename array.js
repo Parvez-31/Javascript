@@ -120,4 +120,23 @@ let doubledNumbers = number.map((num) => {
 
 console.log(doubledNumbers);
 
+// Method: -> reduce()
+// The reduce method() reduces an array to a single value by applying a function to each element, while keeping track of an accumulator. It is commonly used for sums, totals, average and combining values.
 
+let num1 = [1, 2, 3, 4, 5];
+let sum = num1.reduce((total, num) => {
+  return total + num;
+}, 0);
+
+console.log(sum);
+
+// Method: -> reduceRight()
+// The reduceRight() just work like reduce. but it processes the array from right to left (last element to first), It reduces the array to a single value.
+
+let num2 = [1, 2, 3, 4, -5];
+
+let result = num2.reduceRight((total, num) => {
+  return total + num;
+});
+
+console.log(result);
