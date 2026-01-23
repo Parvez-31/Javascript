@@ -140,3 +140,20 @@ let result = num2.reduceRight((total, num) => {
 });
 
 console.log(result);
+
+// Method: -> keys()
+// The keys method returns a new Array Iterator object that contains the keys (indexes) of each element in an array.
+
+let fruity = ["apple", "bannana", "mango"];
+let keysIterator = fruity.keys();
+for (let key of keysIterator) {
+  console.log(key);
+}
+
+// Method: -> entries()
+// The entries method returns a new array iterator object that contains key-value pairs (index and element) for each item in an array.
+
+let ftr = ["apple", "bannana", "mango", "litchi"];
+for (let [key, value] of ftr.entries()) {
+  console.log(`${key} : ${value}`);
+}
