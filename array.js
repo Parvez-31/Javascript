@@ -102,3 +102,22 @@ let check = fillArray.filter((val) => {
 
 console.log(fillArray);
 console.log(check);
+
+// Method: -> forEach()
+// The forEach() method is used to execute a provided function once for each elements in an array. It does not return a new array , it is mainly used for performing actions like logging, updating values, or calling functions.
+let numbers = [1, 2, 3, 4, 5];
+numbers.forEach((num) => {
+  console.log(num);
+});
+
+// Method: -> map()
+// The map() method creates a new array by appling a function to each elements of an existing array. It does not change the original array.
+
+let number = [1, 2, 3, 4, 5];
+let doubledNumbers = number.map((num) => {
+  return num * 2;
+});
+
+console.log(doubledNumbers);
+
+
