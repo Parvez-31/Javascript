@@ -100,8 +100,43 @@ const roundOne = (n, step) => {
 console.log(roundOne(20, 10));
 
 // The call stack
-function greet() {
+function greet(who) {
   console.log("Hello" + who);
 }
 greet("Parvez");
 console.log("Bye");
+
+//------------------------------------------
+function chicken() {
+  return egg();
+}
+
+function egg() {
+  return chicken();
+}
+console.log(chicken() + " come first.");
+
+// Optional Arguments
+
+function squares(x) {
+  return x * x;
+}
+console.log(squares(4, true, "parvez"));
+
+function minus(a, b) {
+  if (b === undefined) {
+    return -a;
+  } else {
+    return a - b;
+  }
+}
+console.log(minus(10));
+console.log(minus(10, 5));
+
+function roundTwo(n, step = 1) {
+  const remainder = n % step;
+  return n - remainder + (remainder < step / 2 ? 0 : step);
+}
+
+console.log(roundTwo(4.5));
+console.log(roundTwo(4.5, 2));
