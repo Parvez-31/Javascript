@@ -182,14 +182,11 @@ let displayFun = (value) => {
 
 let check = (m1, m2) => {
   if (m1 === m2) {
-    let data = "No data to be returned";
-    return data;
+    return "No data to be returned";
   } else if (m1 > m2) {
-    let data = "The first number is greater";
-    return data;
+    return "The first number is greater";
   } else {
-    let data = "The first number is not greater";
-    return data;
+    return "The first number is not greater";
   }
 };
 displayFun(check(45, 48));
@@ -247,3 +244,17 @@ const myCounter = () => {
     return (counter = counter + 1);
   };
 };
+
+// ---------------------------
+
+function wrapValue(n) {
+  let local = n;
+
+  return () => local;
+}
+
+const wrap1 = wrapValue(1);
+const wrap2 = wrapValue(2);
+
+console.log(wrap1());
+console.log(wrap2());
