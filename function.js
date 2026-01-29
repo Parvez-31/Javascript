@@ -225,13 +225,25 @@ let resultProduct = product(6);
 console.log(resultProduct());
 
 // closure
-const outerFunction = (count = 0) => {
+const outerFunction = () => {
+  let counter = 0;
   function innerFunction() {
-    count++;
-    console.log(count);
+    return ++counter;
+    // console.log(counter);
   }
-  return innerFunction();
+  return innerFunction;
 };
 
 let counter = outerFunction();
-counter();
+console.log(counter());
+console.log(counter());
+console.log(counter());
+// ---------------------------
+
+const myCounter = () => {
+  let counter = 0;
+
+  return () => {
+    return (counter = counter + 1);
+  };
+};
