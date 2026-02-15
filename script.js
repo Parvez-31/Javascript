@@ -691,13 +691,82 @@
 // const entries = Object.entries(person);
 // console.log(entries);
 
-const profile = {
-  name: "Rahim",
-  age: 29,
-  city: "dakha",
+// const profile = {
+//   name: "Rahim",
+//   age: 29,
+//   city: "dakha",
+// };
+//
+// for (const key in profile) {
+//   const values = profile[key];
+//   console.log(key, values);
+// }
+//
+// const laptop = {
+//   brand: "Dell",
+//   model: "Inspiron",
+//   price: 45000,
+// };
+//
+// for (let laptopDetails in laptop) {
+//   console.log(laptopDetails + ":" + laptop[laptopDetails]);
+// }
+//
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+//
+// let a = [];
+// let b = [];
+
+// for (let i = 0; i < arr.length; i++) {
+// console.log(i);
+// console.log("-----------------------");
+// console.log(arr[i]);
+
+//   if (arr[i] !== 3) {
+//     a.push(arr[i]);
+//   }
+// }
+
+// console.log(a);
+// console.log(b);
+
+const phone = {
+  brand: "Samsung",
+  model: "Galaxy S21",
+  price: 85000,
 };
 
-for (const key in profile) {
-  const values = profile[key];
-  console.log(key, values);
+// for (let phoneDetails of phone) {
+//   console.log(phoneDetails);
+// }
+
+const namePlace = [
+  {
+    name: "gourav",
+    place: "kolkata",
+    id: 1,
+  },
+  {
+    name: "parvez",
+    place: "basirhat",
+    id: 2,
+  },
+  {
+    name: "ram",
+    place: "mumbai",
+    id: 3,
+  },
+  {
+    name: "visal",
+    place: "kolkata",
+    id: 4,
+  },
+];
+let x = [];
+for (let a in namePlace) {
+  console.log(a);
+  if (namePlace[a].id !== 2) {
+    x.push(namePlace[a]);
+  }
 }
+console.log(x);
