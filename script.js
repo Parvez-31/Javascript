@@ -833,14 +833,116 @@
 
 // console.log(hello(1, 2, 3, 4, 5, 6));
 
-const phone = {
-  brand: "Samsung",
-  model: "Galaxy S21",
-  price: 85000,
+// const phone = {
+//   brand: "Samsung",
+//   model: "Galaxy S21",
+//   price: 85000,
+// };
+
+// const key = Object.keys(phone);
+// // console.log(key);
+// for (let keyValue of key) {
+//   console.log(keyValue, phone[keyValue]);
+// }
+
+// const bike = {
+//   brand: "hero",
+//   price: 120000,
+//   model: "splendor",
+// };
+
+// const value = Object.values(bike);
+// console.log(value);
+
+// const books = {
+//   book1: "harry poter",
+//   book2: "the hobbit",
+//   book3: "game of throns",
+// };
+
+// for (let booksName in books) {
+//   //   console.log(booksName);
+//   console.log(books[booksName]);
+// }
+
+// const numbers = { a: 20, b: 30, c: 80 };
+
+// let sum = 0;
+// for (let number in numbers) {
+//   sum = sum + numbers[number];
+// }
+// console.log(sum);
+
+// const player = {
+//   name: "Messi",
+//   country: "Argentina",
+//   goals: 91,
+// };
+
+// const allValues = Object.values(player);
+// console.log(allValues);
+
+// const building = {
+//   floors: 10,
+//   address: {
+//     street: "Main road",
+//     city: "Kolkata",
+//   },
+//   type: "Commercial",
+// };
+
+// for (let build in building) {
+//   console.log(build + ":" + JSON.stringify(building[build]));
+// }
+
+// const x = Object.entries(building);
+// console.log(x);
+
+// x.forEach(([key, value]) => {
+//   console.log(key, value);
+// });
+
+// deleting object property
+
+// const person = {
+//   name: "alise",
+//   age: 25,
+//   country: "India",
+// };
+
+// delete person.age;
+
+// console.log(person);
+
+// const adminUser = {
+//   userName: "admin",
+//   email: "admin@example.com",
+//   roel: "superadmin",
+// };
+
+// Object.freeze(adminUser);
+
+// // attempt to modify the object
+
+// adminUser.roel = "Parvez";
+// adminUser.email = 121434434;
+// delete adminUser.userName;
+
+// console.log(adminUser);
+
+// seal
+const user = {
+  userName: "parvez",
+  email: "tarafderparvez@gmail.com",
+  password: 1213232,
 };
 
-const key = Object.keys(phone);
-// console.log(key);
-for (let keyValue of key) {
-  console.log(keyValue, phone[keyValue]);
-}
+Object.seal(user);
+
+// attempt to modify the object
+user.password = "newpassword";
+user.email = "jsldfsjdflsdjf";
+user.age = 30;
+delete user.userName;
+
+console.log(user);
