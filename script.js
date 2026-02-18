@@ -730,52 +730,117 @@
 // console.log(a);
 // console.log(b);
 
+// for (let phoneDetails of phone) {
+//   console.log(phoneDetails);
+// }
+
+//  const namePlace = [
+//   {
+//     name: "gourav",
+//     place: "kolkata",
+//     id: 1,
+//   },
+//   {
+//     name: "parvez",
+//     place: "basirhat",
+//     id: 2,
+//   },
+//   {
+//     name: "ram",
+//     place: "mumbai",
+//     id: 3,
+//   },
+//   {
+//     name: "visal",
+//     place: "kolkata",
+//     id: 4,
+//   },
+// ];
+// let x = [];
+// for (let a in namePlace) {
+//   console.log(a);
+//   if (namePlace[a].id !== 2) {
+//     x.push(namePlace[a]);
+//   }
+// }
+// console.log(x);
+
+// Filter array method
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// const newArr = arr.filter((item) => {
+//   return item > 4;
+// });
+// console.log(newArr);
+
+// // map array method
+
+// const newMap = arr.map((item) => {
+//   return item * 2;
+// });
+
+// console.log(newMap);
+
+// const items = [
+//   {
+//     name: "book",
+//     price: 15,
+//   },
+//   {
+//     name: "pen",
+//     price: 4,
+//   },
+//   {
+//     name: "glass",
+//     price: 10,
+//   },
+// ];
+
+// const itemPlus = items.reduce((acc, item) => {
+//   const { price } = item;
+//   return acc + price;
+//   // return (acc = acc + item.price);
+// }, 0);
+
+// console.log(itemPlus);
+
+// let a = "I am a good boy"
+// let b = a.replace("good", "boy")
+// console.log(b);
+
+// let a = " parvez hossien Tarafder ";
+// let b = a.trim();
+// console.log(b);
+
+// array dest...
+//  const a = [1, 2, 3, 4, 5, 6, 7, 8];
+// let [b, c, d, e] = a;
+// console.log(b, c, d, e);
+
+// object dest....
+// const a = {
+//   name: "parvez",
+//   place: "kolkata",
+// };
+
+// let { name, place } = a;
+// console.log(name, place);
+
+// const hello = (...item) => {
+//   return item;
+// };
+
+// console.log(hello(1, 2, 3, 4, 5, 6));
+
 const phone = {
   brand: "Samsung",
   model: "Galaxy S21",
   price: 85000,
 };
 
-// for (let phoneDetails of phone) {
-//   console.log(phoneDetails);
-// }
-
-/* const namePlace = [
-  {
-    name: "gourav",
-    place: "kolkata",
-    id: 1,
-  },
-  {
-    name: "parvez",
-    place: "basirhat",
-    id: 2,
-  },
-  {
-    name: "ram",
-    place: "mumbai",
-    id: 3,
-  },
-  {
-    name: "visal",
-    place: "kolkata",
-    id: 4,
-  },
-];
-let x = [];
-for (let a in namePlace) {
-  console.log(a);
-  if (namePlace[a].id !== 2) {
-    x.push(namePlace[a]);
-  }
+const key = Object.keys(phone);
+// console.log(key);
+for (let keyValue of key) {
+  console.log(keyValue, phone[keyValue]);
 }
-console.log(x); */
-
-// Filter array method
-
-const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-const newArr = arr.filter((item) => {
-  return item > 4;
-});
-console.log(newArr);
