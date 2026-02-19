@@ -930,19 +930,77 @@
 
 // console.log(adminUser);
 
-// seal
-const user = {
-  userName: "parvez",
-  email: "tarafderparvez@gmail.com",
-  password: 1213232,
-};
+// // seal
+// const user = {
+//   userName: "parvez",
+//   email: "tarafderparvez@gmail.com",
+//   password: 1213232,
+// };
 
-Object.seal(user);
+// Object.seal(user);
 
 // attempt to modify the object
-user.password = "newpassword";
-user.email = "jsldfsjdflsdjf";
-user.age = 30;
-delete user.userName;
+// user.password = "newpassword";
+// user.email = "jsldfsjdflsdjf";
+// user.age = 30;
+// delete user.userName;
 
-console.log(user);
+// console.log(user);
+
+// Javascript object protection practice
+
+// const headphone = {
+//   brand: "Sony",
+//   price: 3000,
+//   color: "red",
+// };
+
+// Object.freeze(headphone);
+
+// headphone.soundquality = "good";
+
+// console.log(headphone);
+
+// const book = {
+//   title: "Harry potter",
+//   author: "JK Rowling",
+//   pages: 500,
+// };
+
+// Object.seal(book);
+
+// book.author = "parvez";
+
+// console.log(book);
+
+// const gadget = {
+//   name: "iphone",
+//   price: 120000,
+//   color: "black",
+// };
+
+// delete gadget.color;
+
+// console.log(gadget);
+
+// const animal = {
+//   name: "tiger",
+//   location: "Sundarbon",
+// };
+
+// Object.freeze(animal);
+// animal.location = "basirhat";
+
+// console.log(animal);
+
+const food = {
+  name: "pizza",
+  price: 500,
+  size: "large",
+};
+
+Object.seal(food);
+
+food.price = 1000;
+
+console.log(food);
