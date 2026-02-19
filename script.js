@@ -1023,7 +1023,157 @@
 //   console.log(food);
 // }
 
-const dob = [1999, 1988, 1977, 2006, 2007];
-for (let printDob of dob) {
-  console.log(printDob);
-}
+// const dob = [1999, 1988, 1977, 2006, 2007];
+// for (let printDob of dob) {
+//   console.log(printDob);
+// }
+
+// while loop
+
+// let i = 0;
+// while (i <= 10) {
+//   console.log(i);
+//   i++;
+// }
+
+// let i = 0;
+// while (i < 5) {
+//   console.log("Basirhat high school");
+//   i++;
+// }
+
+// let i = 0;
+// while (i < 10) {
+//   console.log("I do programming minimum 3hours every single day.");
+//   i++;
+// }
+
+// let i = 1;
+// while (i <= 20) {
+//   console.log(i);
+//   i++;
+// }
+
+// let i = 50;
+// while (i <= 100) {
+//   console.log(i);
+//   i++;
+// }
+
+// let i = 1;
+// let sum = 0;
+// while (i <= 10) {
+//   sum = i * 3;
+//   console.log(sum);
+//   i++;
+// }
+
+// let i = 111;
+// while (i > 110) {
+//   console.log(i / 2);
+//   i--;
+// }
+
+// let i = 1;
+// let sum = 0;
+// while (i <= 10) {
+//   //   console.log(i);
+//   sum = sum + i;
+//   i++;
+// }
+
+// console.log(sum);
+
+// let i = 50;
+// while (i <= 100) {
+//   console.log(i);
+//   i++;
+// }
+
+// let i = 5;
+// let sum = 0;
+// while (i <= 15) {
+//   sum = sum + i;
+//   i++;
+// }
+
+// console.log(sum);
+
+// let i = 21;
+// let sum = 0;
+
+// while (i <= 50) {
+//   sum = sum + i;
+//   console.log(sum);
+//   i++;
+// }
+
+// let i = 20;
+// let sum = 0;
+
+// while (i <= 40) {
+//   sum = sum + i;
+//   i++;
+// }
+
+// console.log(sum);
+
+// for loop
+
+// for (let i = 0; i <= 5; i++) {
+//   console.log(i);
+// }
+
+// for (let i = 50; i <= 100; i++) {
+//   console.log(i);
+// }
+
+// for (let i = 5; i >= 1; i--) {
+//   console.log(i);
+// }
+
+// let sum = 0;
+// for (let i = 0; i <= 10; i++) {
+//   sum = sum + i;
+//   console.log(sum);
+// }
+// console.log(sum);
+
+// let i = 0;
+// let sum = 0;
+// while (i <= 10) {
+//   //   console.log(i);
+//   sum = sum + i;
+//   console.log(sum);
+//   i++;
+// }
+
+// const arr = [12, 34, 36, 6, 78, 99];
+// console.log(arr[3]);
+// for (let x of arr) {
+//   console.log(x);
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+const person = {
+  name: "gourav",
+  age: 22,
+  village: "kolkata",
+};
+
+// console.log(person.name);
+// console.log(person["name"]);
+// for (let x in person) {
+//   console.log(x, person[x]);
+// }
+
+// const key = Object.keys(person);
+const value = Object.values(person);
+console.log(value);
+
+// for (let x of key) {
+//   console.log(x, person[x]);
+// }
