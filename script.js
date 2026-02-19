@@ -993,14 +993,37 @@
 
 // console.log(animal);
 
-const food = {
-  name: "pizza",
-  price: 500,
-  size: "large",
-};
+// const food = {
+//   name: "pizza",
+//   price: 500,
+//   size: "large",
+// };
 
-Object.seal(food);
+// Object.seal(food);
 
-food.price = 1000;
+// food.price = 1000;
 
-console.log(food);
+// console.log(food);
+
+// Loop
+
+// const numbers = [12, 3, 45, 678, 90];
+// for (let number of numbers) {
+//   console.log(number);
+// }
+
+// const subjects = ["bengali", "english", "math", "geography", "history"];
+
+// for (let subject of subjects) {
+//   console.log(subject);
+// }
+
+// const foods = ["momo", "rice", "coco", "eggroll", "maggi"];
+// for (let food of foods) {
+//   console.log(food);
+// }
+
+const dob = [1999, 1988, 1977, 2006, 2007];
+for (let printDob of dob) {
+  console.log(printDob);
+}
