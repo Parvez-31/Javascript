@@ -1158,11 +1158,11 @@
 //   console.log(arr[i]);
 // }
 
-const person = {
-  name: "gourav",
-  age: 22,
-  village: "kolkata",
-};
+// const person = {
+//   name: "gourav",
+//   age: 22,
+//   village: "kolkata",
+// };
 
 // console.log(person.name);
 // console.log(person["name"]);
@@ -1171,9 +1171,25 @@ const person = {
 // }
 
 // const key = Object.keys(person);
-const value = Object.values(person);
-console.log(value);
+// const value = Object.values(person);
+// console.log(value);
 
 // for (let x of key) {
 //   console.log(x, person[x]);
 // }
+
+// const a = () => {
+//   console.log("hello");
+//   return;
+// };
+
+// const b = (item) => {
+//   console.log("function b");
+//   item();
+// };
+
+// b(a);
+
+const str = "hello i am parvez";
+const a = str.split(" ");
+console.log(a[2]);
