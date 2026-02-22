@@ -1190,6 +1190,109 @@
 
 // b(a);
 
-const str = "hello i am parvez";
-const a = str.split(" ");
-console.log(a[2]);
+// const str = "hello i am parvez";
+// const a = str.split(" ");
+// console.log(a[2]);
+
+// for (let i = 150; i <= 170; i++) {
+//   console.log(i);
+// }
+
+// const arr = [21, 5, 6, 7, 8, 9, 65, 44, 4];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// let sum = 0;
+// for (let i = 25; i <= 75; i++) {
+//   sum = sum + i;
+// }
+
+// console.log(sum);
+
+// for (let i = 0; i <= 20; i++) {
+//   if (i % 3 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// for (let i = 1; i < 20; i = i + 2) {
+//   console.log(i);
+// }
+
+// for (let i = 2; i <= 20; i += 2) {
+//   console.log(i);
+// }
+
+// for (let i = 1; i <= 30; i++) {
+//   if (i % 5 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// for (let i = 1; i <= 30; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// for (let i = 20; i <= 50; i++) {
+//   if (i % 7 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// for (let i = 40; i <= 80; i++) {
+//   if (i % 5 === 0 && i % 7 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// let sum = 0;
+// for (let i = 1; i <= 40; i++) {
+//   if (i % 13 === 0) {
+//     sum = sum + i;
+//   }
+// }
+// console.log(sum);
+
+// for (let i = 1; i <= 50; i = i + 4) {
+//   console.log(i);
+// }
+
+// for (let i = 0; i <= 100; i++) {
+//   if (i % 6 === 0 || i % 9 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// let sum = 0;
+// for (let i = 1; i <= 50; i++) {
+//   if (i % 3 === 0 && i % 4 === 0) {
+//     sum = sum + i;
+//   }
+// }
+
+// console.log(sum);
+
+// for (let i = 0; i <= 15; i++) {
+//   console.log(i);
+
+//   if (i >= 7) {
+//     break;
+//   }
+// }
+
+// for (let i = 0; i < 10; i++) {
+//   if (i === 5) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+for (let i = 0; i <= 20; i++) {
+  if (i % 4 === 0) {
+    continue;
+  }
+  console.log(i);
+}

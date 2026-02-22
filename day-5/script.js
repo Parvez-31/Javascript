@@ -23,6 +23,8 @@ const factorial = (n) => {
 console.log(factorial(5));
 
 // QUESTION: => 3
-const arraySort = function (arr) {};
 
-arraySort([1, 4, 56, 23, 5, 6, 3]);
+const arraySort = function (arr) {
+  console.log();
+};
+arraySort([1, 4, 56, 55, 5, 6, 3]);
