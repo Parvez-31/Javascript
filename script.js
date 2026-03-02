@@ -1783,21 +1783,70 @@
 
 // console.log(oddAverage(23, 4, 56, 7, 89, 12, 34, 56));
 
-const evenAverage = (...numbers) => {
-  let even = [];
-  for (let number of numbers) {
-    if (number % 2 === 0) {
-      even.push(number);
-    }
-  }
+// const evenAverage = (...numbers) => {
+//   let even = [];
+//   for (let number of numbers) {
+//     if (number % 2 === 0) {
+//       even.push(number);
+//     }
+//   }
 
-  if (even.length === 0) return "No even numbers";
+//   if (even.length === 0) return "No even numbers";
 
-  let sum = 0;
-  for (let sumEven of even) {
-    sum = sum + sumEven;
-  }
+//   let sum = 0;
+//   for (let sumEven of even) {
+//     sum = sum + sumEven;
+//   }
 
-  return sum / even.length;
-};
-console.log(evenAverage(12, 34, 56, 79, 1, 5));
+//   return sum / even.length;
+// };
+// console.log(evenAverage(12, 34, 56, 79, 1, 5));
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum = sum + arr[i];
+// }
+
+// console.log(sum);
+
+// let str = sum.toString();
+// // console.log(str);
+// let newarr = str.split("");
+
+// // console.log(newarr);
+// for (let i = 0; i < newarr.length; i++) {
+//   console.log(newarr[i]);
+// }
+
+// const str = "i am a good boy";
+// let word = str.split(" ");
+// // console.log(word);
+// let
+
+// let name = "parvez";
+// let reve = "";
+// for (let i = name.length - 1; i >= 0; i--) {
+//   reve = reve + name[i];
+// }
+
+// // console.log(reve);
+// let arr = [];
+// for (let i = 0; i < reve.length; i++) {
+//   arr.push(reve[i]);
+// }
+
+// // console.log(arr);
+// function upper(arr) {
+//   let result = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === "v") {
+//       result = result + "V";
+//     } else {
+//       result = result + arr[i];
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(upper(arr));
