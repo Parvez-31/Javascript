@@ -73,12 +73,12 @@
 // console.log(customReduce(arr));
 // filter
 
-const arr = [2, 3, 4, 5, 6, 7, 8];
-let newArr = [];
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] > 4) {
-    newArr[newArr.length] = arr[i];
-  }
-}
+// const arr = [2, 3, 4, 5, 6, 7, 8];
+// let newArr = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > 4) {
+//     newArr[newArr.length] = arr[i];
+//   }
+// }
 
-console.log(newArr);
+// console.log(newArr);

@@ -2209,3 +2209,99 @@
 
 // const result = `My name ${student.name} and my avg number is ${student.results[0] + student.results[1] + student.results[2] / student.results.length}`;
 // console.log(result);
+
+// function add(num1, num2) {
+//   return num1 + num2;
+// }
+// const result = add(13, 22);
+// console.log(result);
+
+// const student = {
+//   name: "parvez",
+//   age: 308,
+// };
+
+// const getAge = (age) => age.age;
+// console.log(getAge(student));
+
+// const getThird = (number) => number[4];
+// const result = getThird([2, 4, 6, 7, 3, 7]);
+// console.log(result);
+
+// const getPi = () => Math.PI;
+// console.log(getPi());
+
+// const doMath = (x, y, z) => {
+//   const sum = x + y + z;
+//   const multi = x * y * z;
+//   const result = sum + multi;
+//   return result;
+// };
+// console.log(doMath(3, 4, 5));
+
+// const person = {
+//   name: "parvez",
+//   greetRegular: function () {
+//     return `Hello ${this.name}`;
+//   },
+//   greetArrow: () => {
+//     return `Hello ${this.name}`;
+//   },
+// };
+
+// console.log(person.greetRegular());
+// console.log(person.greetArrow());
+
+// const greet = (name = "guest") => name;
+// console.log(greet());
+// console.log(greet("parvez"));
+
+// wrong
+// const getObject = () => {
+//   key: "value";
+// };
+
+// console.log(getObject());
+
+// right
+// const getObject = () => ({ key: "value" });
+// console.log(getObject());
+
+// const getFirst = (number) => number[0];
+// console.log(getFirst([12, 3, 4, 5, 6, 7]));
+
+// const getMulti = (x, y, z) => x * y * z;
+// console.log(getMulti(4, 5, 6));
+
+// const unknown = () => "unknown";
+// console.log(unknown());
+
+// const person = {
+//   name: "parvez",
+//   money: 20,
+// };
+
+// const getMoney = (money) => {
+//   return money.money / 5;
+// };
+// console.log(getMoney(person));
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// const arrSum = (arr) => {
+//   return arr[0] + arr[arr.length - 1];
+// };
+// console.log(arrSum(arr));
+
+// const sum = (firstNumber = 10, secondNumber = 5) => firstNumber + secondNumber;
+// console.log(sum());
+
+const actor = {
+  name: "Parvez",
+  age: 40,
+  phno: 30438204823,
+  money: 384038430,
+};
+
+const { name, age, phno, money } = actor;
+console.log(name, age, phno, money);
