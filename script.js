@@ -2296,12 +2296,81 @@
 // const sum = (firstNumber = 10, secondNumber = 5) => firstNumber + secondNumber;
 // console.log(sum());
 
-const actor = {
-  name: "Parvez",
-  age: 40,
-  phno: 30438204823,
-  money: 384038430,
+// const actor = {
+//   name: "Parvez",
+//   age: 40,
+//   phno: 30438204823,
+//   money: 384038430,
+// };
+
+// const { name, age: boyos, phno, money } = actor;
+// console.log(name, boyos, phno, money);
+
+// const num = [12, 34];
+// const [first, second] = num;
+// console.log(first, second);
+
+// function doubleThem(a, b) {
+//   return [a * 2, b * 2];
+// }
+
+// const [first, second] = doubleThem(4, 5);
+// console.log(first);
+// console.log(second);
+
+// const { name, phone = "N/A" } = person;
+// console.log(name, phone);
+
+// const person = {
+//   name: "amit",
+//   age: 34,
+//   hobby: "reading",
+// };
+
+// function introduction({ name, hobby }) {
+//   console.log(name, hobby);
+// }
+
+// introduction(person);
+
+// const arr = [1, 2, 3, 4, 5];
+// function intorduce([, a, , b]) {
+//   console.log(a, b);
+// }
+
+// intorduce(arr);
+
+// const product = { name: "Laptop", price: 50000, brand: "Dell" };
+// const { brand } = product;
+// console.log(brand);
+
+// const color = ["red", "blue", "yellow"];
+// const [, second] = color;
+// console.log(second);
+
+// const num = [2, 4, 6, 8];
+// const [two, ...eight] = num;
+// console.log(two, eight[eight.length - 1]);
+
+// function multiply(a, b) {
+//   return [a * 3, b * 3];
+// }
+
+// const [firstNum, secondNum] = multiply(5, 6);
+// console.log(firstNum, secondNum);
+
+// const person = {
+//   name: "parvez",
+//   city: "kolkata",
+// };
+
+// const { name, city, phone = "N/A" } = person;
+// console.log(name, city, phone);
+
+const teacher = {
+  name: "Maria",
+  profession: "Teacher",
 };
 
-const { name, age, phno, money } = actor;
-console.log(name, age, phno, money);
+const { name, profession: job } = teacher;
+console.log(name, job);
