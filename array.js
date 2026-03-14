@@ -292,3 +292,7 @@
 // const arr = [40, 60, 70, 20, 45];
 // const result = arr.every((num) => num >= 50);
 // console.log(result);
+
+// const nested = [1, 2, 3, [7, 9, [6, 4, 3]]];
+// const flattened = nested.flat(2);
+// console.log(flattened);
