@@ -215,3 +215,18 @@
 //forEach
 // const numbers = [1, 3, 5, 6, 7];
 // const result = numbers.forEach((item) => console.log(item));
+
+//filter
+// const arr = [40, 60, 72, 55, 71, 70];
+// const result = arr.filter((item) => item >= 70);
+// console.log(result);
+
+// const friends = ["parvez", "sourav", "rohit", "subjit", "gourav"];
+// const nameFriend = friends.filter((item) => {
+//   if (item.includes("r")) {
+//     return item;
+//   }
+//   return item.length > 5;
+// });
+
+// console.log(nameFriend);
