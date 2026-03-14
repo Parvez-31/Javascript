@@ -235,3 +235,46 @@
 // const players = [75, 39, 29, 71, 90];
 // const findPlayer = players.find((player) => player > 100);
 // console.log(findPlayer);
+
+//findIndex
+// const arr = [20, 48, 55, 90];
+// const result = arr.findIndex((item) => item > 50);
+// console.log(result);
+
+// const arr = [26, 48, 55, 90];
+// const result = arr.findIndex((item) => item > 100);
+// console.log(result);
+
+// const arr = [30, 45, 12, 45, 89];
+// const finalPrice = arr.map((item) => item + 13);
+// console.log(finalPrice);
+
+// const players = ["messi", "maradona", "pale", "zidane", "ronaldo"];
+// const bigPlayer = players.filter((player) => player.length > 5);
+// console.log(bigPlayer);
+
+// const numbers = [10, 15, 20, 25, 30];
+// const findNumber = numbers.find((num) => num > 10);
+// console.log(findNumber);
+
+// const height = [65, 70, 68, 72, 68, 73];
+// const findHeight = height.filter((item) => item > 69);
+// console.log(findHeight);
+
+// const numbers = [7, 10, 15, 20, 25, 30];
+// const results = numbers.map((number) => number / 3);
+// console.log(results);
+
+// const players = ["messi", "maradona", "pale", "zidane", "ronaldo"];
+// const thirdLetter = players.map((player) => player[2]);
+// console.log(thirdLetter);
+
+// const friends = ["Tom", "Harry", "Jack", "Sam"];
+// const result = friends.find((friend) => friend === "Harry");
+// console.log(result);
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// const result = arr.forEach((item) => console.log(item));
+
+// const friends = ["Tom", "Harry", "Jack", "Sam"];
+// const result = friends.forEach((friend) => console.log(friend));
