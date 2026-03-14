@@ -283,3 +283,12 @@
 // const arr = [20, 30, 55, 45, 34];
 // const hasPassed = arr.some((num) => num >= 50);
 // console.log(hasPassed);
+
+//every
+// const arr = [60, 80, 90, 76];
+// const hasPassed = arr.every((num) => num >= 50);
+// console.log(hasPassed);
+
+// const arr = [40, 60, 70, 20, 45];
+// const result = arr.every((num) => num >= 50);
+// console.log(result);
