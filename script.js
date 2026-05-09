@@ -3444,3 +3444,199 @@
 // const shopObj = JSON.parse(shopJSON);
 // console.log(shopJSON);
 // console.log(shopObj);
+
+// console.log(5 + "6");
+
+// scope
+// global
+// local(function scope)
+// block scope
+
+// const userName = "parvez";
+
+// function hello() {
+//   var userName = "ola";
+//   console.log(userName);
+// }
+
+// hello();
+
+// console.log(userName);
+// if (true) {
+//   let x = 45;
+//   var y = 340;
+//   console.log(x);
+//   console.log(y);
+// }
+
+// console.log(y);
+
+// let a = "parvez";
+
+// function outerFn() {
+//   let b = "mota";
+
+//   function innerFn() {
+//     let c = "nill";
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+//   }
+//   innerFn();
+//   console.log(a);
+//   console.log(b);
+//   console.log(c);
+// }
+
+// outerFn();
+
+// function one() {
+//   if (true) {
+//     var name = "parvez";
+//   }
+//   console.log(name);
+// }
+// function two() {
+//   if (true) {
+//     let a = "mota";
+//   }
+//   console.log(a);
+// }
+// function three() {
+//   if (true) {
+//     const b = "nill";
+//   }
+//   console.log(b);
+// }
+
+// one();
+// two();
+// three();
+
+// const x = "parvez global";
+// function print() {
+//   console.log(x);
+// }
+
+// function main() {
+//   const x = "parvez";
+//   print();
+// }
+
+// main();
+// function outer() {
+//   const x = "parvez";
+//   function inner() {
+//     console.log(x);
+//   }
+//   inner();
+// }
+
+// outer();
+
+// function makeGreatting() {
+//   const greatting = "hello";
+
+//   function sayHi(name) {
+//     console.log(`${greatting} ${name}`);
+//   }
+
+//   return sayHi;
+// }
+
+// const greet = makeGreatting();
+// greet("parvez");
+
+// function count() {
+//   let count = 0;
+
+//   return () => {
+//     count++;
+//     console.log(count);
+//   };
+// }
+
+// const counter = count();
+// counter();
+// counter();
+// counter();
+
+// console.log(a);
+// var a = "parvez";
+
+// console.log(a);
+
+// var name; //hoisted
+// console.log(name);
+// name = "parvez";
+// console.log(name);
+
+// console.log(a);
+// console.log(a);
+// const a = "xyz";
+// console.log(a);
+
+// const person = {
+//   name: "parvez",
+
+//   greet: function () {
+// console.log(this.name);
+
+// setTimeout(function () {
+//   console.log(this.name);
+// }, 1000);
+//     setTimeout(() => {
+//       console.log(this.name);
+//     }, 1000);
+//   },
+// };
+
+// person.greet();
+
+// const multiplyer = (x) => {
+//   return (y) => {
+//     return x * y;
+//   };
+// };
+// const double = multiplyer(8);
+// console.log(double(7));
+
+// function applyOperation(a, b, operation) {
+//   return operation(a, b);
+// }
+
+// console.log(applyOperation(5, 6, (a, b) => a + b));
+
+// function makeAdder(x) {
+//   return (y) => x * y;
+// }
+
+// const make = makeAdder(8);
+// console.log(make(9));
+
+// function dotask(callback) {
+//   console.log("do task");
+//   callback();
+// }
+// function taskDone() {
+//   console.log("task Done");
+// }
+
+// dotask(taskDone);
+
+// function greatting(fn) {
+//   console.log("Hi");
+//   fn();
+//   console.log("Bye");
+// }
+
+// greatting(() => console.log("parvez"));
+
+// function outer(x) {
+//   return function (y) {
+//     console.log(x * y);
+//   };
+// }
+
+// const inner = outer(8);
+// inner(7);
