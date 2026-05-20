@@ -3686,3 +3686,149 @@
 // });
 
 // console.log("end of script");
+
+// const person = {
+//   firstName: "Parvez",
+//   lastName: "Tarafder",
+//   contact: "88888888",
+//   getFullName: function () {
+//     console.log(this.firstName + " " + this.lastName);
+//   },
+// };
+// const person1 = {
+//   firstName: "Jubu",
+//   lastName: "Mondal",
+//   contact: "9999999",
+//   getFullName: function () {
+//     console.log(this.firstName + " " + this.lastName);
+//   },
+// };
+// const person2 = {
+//   firstName: "Akil",
+//   lastName: "Udding",
+//   contact: "3333333",
+//   getFullName: function () {
+//     console.log(this.firstName + " " + this.lastName);
+//   },
+// };
+
+// function Person(firstName, lastName, contact) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+//   this.contact = contact;
+
+//   this.getFullName = function () {
+//     console.log(this.firstName + " " + this.lastName);
+//   };
+// }
+
+// class Person(firstName, lastName, contact) {
+//    con
+// }
+
+// const p1 = new Person("Parvez", "Tarafder", "999999");
+// const p2 = new Person("Akil", "Udding", "888888");
+// const p3 = new Person("Mota", "Mondal", "77777");
+// p1.getFullName();
+// p2.getFullName();
+// p3.getFullName();
+
+// const animal = {
+//   eat: function () {
+//     console.log(this.name + " " + "eat");
+//   },
+
+//   sleep: function () {
+//     console.log(this.name + " " + "eat");
+//   },
+// };
+
+// const dog = Object.create(animal);
+// dog.name = "tommy";
+// dog.eat();
+
+// const person = {
+//   name: "parvez",
+//   lastName: "Tarafder",
+// };
+
+// const { name: firstName, lastName } = person;
+// person.name = "mota";
+// console.log(firstName, lastName);
+// console.log(person.name);
+
+// const arr = ["mango", "apple", "guava"];
+// const arr1 = ["34", "98", "23"];
+// console.log(...arr);
+
+// const copy = [...arr];
+// console.log(copy);
+
+// const merge = [...arr, ...arr1];
+// console.log(merge);
+
+// class Animal {
+//   speak() {
+//     console.log("i speak something");
+//   }
+// }
+
+// class Dog extends Animal {
+//   speak() {
+//     console.log("gau gau");
+//   }
+// }
+// class Cat extends Animal {
+//   speak() {
+//     console.log("mau mau");
+//   }
+// }
+
+// const animals = [new Dog(), new Cat()];
+
+// animals.forEach((animal) => animal.speak());
+
+// function getFirst<T>(arr:T[]): T {
+//    console.log(arr[0]);
+// }
+// getFirst([23,45,64])
+// getFirst(["23","256","999"])
+
+// const person = {
+//   greet() {
+//     console.log("hello");
+//   },
+// };
+
+// const user = Object.create(person);
+// user.name = "parvez";
+// console.log(user.name);
+// user.greet();
+
+// const user = {
+//   id: 1,
+//   name: "parvez",
+//   job: "developer",
+// };
+
+// const userJson = JSON.stringify(user);
+
+// console.log(userJson);
+
+// const shop = {
+//   owner: "Alia",
+//   address: {
+//     street: "kochukhet voot er goli",
+//     city: "ranbir",
+//     country: "BD",
+//   },
+//   products: ["laptop", "mic", "monitor", "keyboard"],
+//   revenue: 45000,
+//   isOpen: true,
+//   isNew: false,
+// };
+
+// const userShop = JSON.stringify(shop);
+// console.log(userShop);
+// const shopObj = JSON.parse(userShop);
+// console.log(shopObj);
