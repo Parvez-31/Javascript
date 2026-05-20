@@ -3832,3 +3832,60 @@
 // console.log(userShop);
 // const shopObj = JSON.parse(userShop);
 // console.log(shopObj);
+
+// const orderFood = new Promise((res, rej) => {
+//   const foodReady = true;
+
+//   if (foodReady) {
+//     res("Food is ready");
+//   } else {
+//     rej("Bap ar hotel bondo");
+//   }
+// });
+
+// orderFood
+//   .then((msg) => {
+//     console.log(msg);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// const getUser = new Promise((res, rej) => {
+//   const userAvaliable = false;
+//   const userData = ["parvez", "hossien", "tarafder"];
+
+//   if (userAvaliable) {
+//     res(userData);
+//   } else {
+//     rej("no data avaliable");
+//   }
+// });
+
+// getUser
+//   .then((msg) => {
+//     console.log(msg);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+// const moneyRequest = new Promise((res, rej) => {
+//   setTimeout(() => res("request submitted"), 1000);
+// });
+
+// const transferMoney = new Promise((res, rej) => {
+//   setTimeout(() => res("money transferred"), 2000);
+// });
+
+// const payFee = new Promise((res, rej) => {
+//   setTimeout(() => res("fee paid"), 1500);
+// });
+
+// Promise.all([moneyRequest, payFee, transferMoney])
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((err) => {
+//     console.log("Error:", err);
+//   });
