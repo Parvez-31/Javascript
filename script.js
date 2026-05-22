@@ -3889,3 +3889,79 @@
 //   .catch((err) => {
 //     console.log("Error:", err);
 //   });
+
+//   const url = ;
+//   fetch(url);
+
+// or
+//   fetch('https://jsonplaceholder.typicode.com/users')
+// fetch("https://jsonplaceholder.typicode.com/users/1")
+//   .then((res) => res.json())
+//   .then((data) => console.log(data))
+//   .catch((err) => console.log(err));
+
+// CRUD
+// Read/GET
+// const url = "https://jsonplaceholder.typicode.com/users/1";
+// fetch(url)
+//   .then((response) => response.json())
+//   .then((msg) => console.log(msg));
+
+// Create/POST
+// const url = "https://jsonplaceholder.typicode.com/users";
+// const user = { name: "John Doe", email: "john.doe@example.com" };
+// const options = {
+//   method: "POST",
+//   body: JSON.stringify(user),
+//   headers: {
+//     "Content-type": "application/json",
+//   },
+// };
+
+// fetch(url, options)
+//   .then((res) => res.json())
+//   .then((data) => console.log(data))
+//   .catch((error) => console.error("Error:", error));
+
+// Update(PUT,PATCH)
+// const url = "https://jsonplaceholder.typicode.com/users/1";
+// const updatedUser = { name: "parvez", email: "parveztarafder31@gmail.com" };
+// const options = {
+//   method: "PUT",
+//   body: JSON.stringify(updatedUser),
+//   headers: {
+//     "Content-type": "application/json",
+//   },
+// };
+
+// fetch(url, options)
+//   .then((response) => response.json())
+//   .then((data) => console.log(data))
+//   .catch((error) => console.log("Error:", error));
+
+// PATCH
+// const url = "https://jsonplaceholder.typicode.com/users/1";
+// const user = { name: "parvez" };
+// const options = {
+//   method: "PATCH",
+//   body: JSON.stringify(user),
+//   headers: {
+//     "Content-type": "application/json",
+//   },
+// };
+
+// fetch(url, options)
+//   .then((res) => res.json())
+//   .then((data) => console.log("patch:", data))
+//   .catch((err) => console.log(err));
+
+// DELETE
+// const url = "https://jsonplaceholder.typicode.com/users/1";
+// const options = {
+//   method: "DELETE",
+// };
+
+// fetch(url, options)
+//   .then((res) => res.json())
+//   .then((data) => console.log("deleted:", data))
+//   .catch((err) => console.log(err));
