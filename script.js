@@ -3965,3 +3965,55 @@
 //   .then((res) => res.json())
 //   .then((data) => console.log("deleted:", data))
 //   .catch((err) => console.log(err));
+
+// const data = '{"name":"Rahim","age":25,"isStudent":true}';
+// const result = JSON.parse(data);
+// console.log(result);
+
+// const data = "Data stolen by data baba";
+// const result = JSON.parse(data);
+// console.log(result);
+
+// try {
+//   const data = "Data stolen by data baba";
+//   const result = JSON.parse(data);
+//   console.log(result);
+// } catch (error) {
+//   console.log("Error:", error);
+// } finally {
+//   console.log("json parsing attempted complated");
+// }
+
+// try {
+//   console.log("opening the file...");
+// } catch (error) {
+//   console.log("Error:", error);
+// } finally {
+//   console.log("closing the file...");
+// }
+
+// function getProperty(str) {
+//   try {
+//     return str.toUpperCase();
+//   } catch (error) {
+//     console.log("Error:", error);
+//   }
+// }
+
+// console.log(getProperty("korona"));
+// console.log(getProperty(23));
+
+// function validInput(input) {
+//   try {
+//     if (typeof input !== "string") {
+//       throw new Error("Input must be a string");
+//     } else {
+//       console.log("valid input", input);
+//     }
+//   } catch (error) {
+//     console.log("error", error.message);
+//   }
+// }
+
+// validInput("hello");
+// validInput(45);
