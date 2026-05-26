@@ -4017,3 +4017,49 @@
 
 // validInput("hello");
 // validInput(45);
+
+// function performanceCleanUp() {
+//   try {
+//     console.log("starting a progress.");
+//   } finally {
+//     console.log("cleaning up resources...");
+//   }
+// }
+
+// performanceCleanUp();
+
+// function validInput(str) {
+//   try {
+//     if (typeof str !== "string") {
+//       throw new Error("Input must be string");
+//     } else {
+//       console.log("Valid input :", str);
+//     }
+//   } catch (error) {
+//     console.log("Custom Error:", error);
+//   }
+// }
+// validInput("I am a good boy");
+// validInput(35);
+
+// fetch("https://jsonplaceholder.typicode.com/users/1")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data);
+//   })
+//   .catch((error) => {
+//     console.error("Error:", error);
+//   });
+
+// async function fetchData() {
+//   try {
+//     const url = "https://jsonplaceholder.typicode.com/users/1";
+//     const response = await fetch(url);
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log("Error", error);
+//   }
+// }
+
+// fetchData();
